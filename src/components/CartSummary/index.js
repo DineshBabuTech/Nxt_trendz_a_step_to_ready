@@ -20,6 +20,7 @@ const CartSummary = () => (
               Order Total: <span className="span-item">RS {totalAmount}/-</span>
             </h1>
             <p className="items-cart">{ItemsCount} Items in cart</p>
+
             <button className="checkout-btn" type="button">
               Checkout
             </button>

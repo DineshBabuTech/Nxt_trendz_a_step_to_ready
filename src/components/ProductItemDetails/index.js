@@ -192,6 +192,7 @@ class ProductItemDetails extends Component {
                 <SimilarProductItem
                   productDetails={eachSimilarProduct}
                   key={eachSimilarProduct.id}
+                  getProductData={this.getProductData}
                 />
               ))}
             </ul>

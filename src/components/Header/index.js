@@ -1,6 +1,8 @@
 import {Link, withRouter} from 'react-router-dom'
 import Cookies from 'js-cookie'
 
+import {MdAccountBox} from 'react-icons/md'
+
 import CartContext from '../../context/CartContext'
 
 import './index.css'
@@ -68,17 +70,20 @@ const Header = props => {
                 Home
               </Link>
             </li>
-
             <li className="nav-menu-item">
               <Link to="/products" className="nav-link">
                 Products
               </Link>
             </li>
-
             <li className="nav-menu-item">
               <Link to="/cart" className="nav-link">
                 Cart
                 {renderCartItemsCount()}
+              </Link>
+            </li>
+            <li className="nav-menu-item">
+              <Link to="/account" className="nav-link">
+                My Account
               </Link>
             </li>
           </ul>
@@ -102,7 +107,6 @@ const Header = props => {
               />
             </Link>
           </li>
-
           <li className="nav-menu-item-mobile">
             <Link to="/products" className="nav-link">
               <img
@@ -120,6 +124,11 @@ const Header = props => {
                 className="nav-bar-img"
               />
               {renderCartItemsCount()}
+            </Link>
+          </li>
+          <li className="nav-menu-item-mobile">
+            <Link to="/products" className="nav-link">
+              <MdAccountBox className="account-img" />
             </Link>
           </li>
         </ul>

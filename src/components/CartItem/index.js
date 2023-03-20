@@ -73,7 +73,6 @@ const CartItem = props => (
             </div>
           </div>
           <button
-            data-testid="remove"
             className="delete-button"
             type="button"
             onClick={onRemoveCartItem}
