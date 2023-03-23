@@ -27,7 +27,7 @@ class App extends Component {
       eachItem => eachItem.id !== product.id,
     )
     if (filteredCartList.length > 0) {
-      const quantity = product.quantity + 1
+      const quantity = filteredCartList[0].quantity + product.quantity
       const updatedProduct = {...product, quantity}
       this.setState({cartList: [...updatedFilter, updatedProduct]})
     } else {
